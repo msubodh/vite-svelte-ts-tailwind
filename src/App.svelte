@@ -14,7 +14,7 @@
     apps.
   </p>
 
-  <p>
+  <p class="text-sm font-medium text-green-500">
     Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
     the officially supported framework, also powered by Vite!
   </p>
