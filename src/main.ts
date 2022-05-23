@@ -1,8 +1,8 @@
-import App from './App.svelte';
+import Calculator from './Calculator.svelte';
 import './index.css';
 
-const app = new App({
-	target: document.getElementById('app')
+const calculator = new Calculator({
+	target: document.getElementById('sustainability-calculator')
 });
 
-export default app;
+export default calculator;
