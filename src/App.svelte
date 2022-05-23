@@ -1,14 +1,32 @@
 <script lang="ts">
-  import logo from './assets/svelte.png'
-  import Counter from './lib/Counter.svelte'
+  import logo from "./assets/svelte.png";
+  import Counter from "./lib/Counter.svelte";
 </script>
 
 <main>
   <img src={logo} alt="Svelte Logo" />
   <h1>Hello Typescript!</h1>
-
+  
   <Counter />
 
+  <div class="drawer">
+  <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content">
+    <!-- Page content here -->
+    <label for="my-drawer" class="btn btn-primary drawer-button">Open drawer</label>
+  </div> 
+  <div class="drawer-side">
+    <label for="my-drawer" class="drawer-overlay"></label>
+    <ul class="p-4 overflow-y-auto menu w-80 bg-base-100 text-base-content">
+      <!-- Sidebar content here -->
+      <li><a>Sidebar Item 1</a></li>
+      <li><a>Sidebar Item 2</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+  
   <p>
     Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
     apps.
@@ -22,8 +40,8 @@
 
 <style>
   :root {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
 
   main {
